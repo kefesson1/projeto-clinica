@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+main{
+    overflow-x: hidden;
+}
+
+:root{
+    --font-color:#0000008c;
+    --margin:4% auto 0 auto;
+    --background-header: #00CED1;
+    --background-footer: #008B8B;
+}
+
+header{
+    background-color: #00CED1;
+}
+
+.img-logo{
+    width: 60%;
+}
+
+.cabecalho{
+    margin: 0 auto;
+    max-width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 35vw;
+}
+
+.links-topo{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2vw;
+}
+
+.links-topo a{
+    color: #fff;
+    font-weight: bold;
+}
+
+.links-topo a:hover, .link-secao3:hover{
+    color: var(--font-color);
+}
+
+.secao1{
+    background-image: url(../recepcao.png);
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+.titulo-secao1{
+    max-width: 1024px;
+    margin-left: 14%;
+}
+
+.titulo-secao1 h1{
+    text-transform:uppercase;
+    font-size:38px;
+    color: #fff;
+    font-weight: 200;
+}
+
+.secoes{
+    margin: var(--margin);
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    max-width: 1024px;
+    width: 44%;
+}
+
+.titulo-secoes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content:center;
+    align-items:center;
+}
+
+.texto{
+    color: var(--font-color);
+    text-align: center;
+}
+
+.div-lista-secao2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    margin: var(--margin);
+}
+
+#titulo-secao2{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 2%;
+}
+
+.lista-secao2 h3{
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 5%;
+
+}
+
+.lista-secao2 li{
+    text-align: left;
+   
+}
+
+.fig{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5%;
+    align-items: center;
+    margin-top: 6%;
+}
+
+.fig figure{
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+}
+
+.fig figure figcaption{
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.img-fig{
+    width: 20vw;
+}
+
+.titulo-secoes h2{
+    font-size:18px;
+    font-weight:bold;
+}
+
+.link-secao3{
+    margin-top: 6%;
+    background-color: #00CED1;
+    text-transform: uppercase;
+    padding: 2% 4%;
+    color: #fff;
+}
+
+.secao4{
+    gap:20px;
+    width: 100%;
+}
+
+.rodape{
+    background-color: #008B8B;
+}
+
+.texto-rodape{
+    text-align: center;
+    color:#fff;
+    line-height: 30px;
+}
+
+.rodape a{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.div-rodape{
+    padding: 3%;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width:425px){
+    
+    .cabecalho{
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        gap: 10px;
+    }
+
+    .cabecalho a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2%;
+    }
+
+    .img-logo{
+        width: 50%;
+    }
+
+    .links-topo{
+        font-size: 2.8vh;
+        border-top: 2px solid rgba(0, 0, 0, 0.2);
+        padding: 2%;
+        width: 90%;
+    }
+
+    .titulo-secao1{
+        margin-left: 4%;
+    }
+
+    .titulo-secao1 h1{
+        font-size:26px;
+    }
+
+    .secao1{
+        height:30vh;
+    }
+
+    .img-medico{
+        display: none;
+    }
+
+    .secoes{
+        width: 90%;
+        margin-top: 10%;
+    }
+
+    .lista-secao2{
+        margin-top: 5%;
+    }
+
+    .lista-secao2 li{
+        margin-left: 10%;
+    }
+
+    .fig{
+        flex-direction:column;
+        gap: 30px;
+        width: 90%;
+    }
+
+    .img-fig{
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) and (min-width:426px){
+    
+    .img-medico{
+        display: none;
+    }
+
+    .img-logo{
+        width: 15vw;
+    }
+
+    .links-topo{
+        font-size: 2vh;
+    }
+
+    .cabecalho{
+        padding: 0 2%;
+    }
+
+    .titulo-secao1{
+        margin-left: 4%;
+    }
+
+    .titulo-secao1 h1{
+        font-size:5vh;
+    }
+
+
+    .secao1{
+        height:42vh;
+    }
+
+    .secoes{
+        width: 80%;
+        margin-top: 6%;
+    }
+
+    .texto{
+        font-size: 2.5vh;
+    }
+
+    #titulo-secao3{
+        font-size: 3vh;
+    }
+
+    .fig{
+        flex-wrap: wrap;
+        width: 100vw;
+        justify-content:center;
+        gap: 2% 4%;
+    }
+
+    .fig figure{
+        width: 42%;
+
+    }
+
+    .img-fig{
+        width:100%;
+    }
+
+    #fig-3{
+        margin: 5%;
+    }
+
+}
+
+@media (max-width:1024px) and (min-width:769px){
+    .secao1{
+        height: 55vh;
+    }
+
+    .titulo-secao1{
+        margin-left: 2%;
+
+    }
+
+    .secoes{
+        width: 70vw;
+    }
+
+    .fig{
+        width: 90vw;
+    }
+
+    .fig figure{
+        width: 42%;
+
+    }
+    .img-fig{
+        width:100%;
+    }
+
+}
+

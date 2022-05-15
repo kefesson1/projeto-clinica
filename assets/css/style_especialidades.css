@@ -1,0 +1,141 @@
+.nav-titulo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5vh;
+    padding: 2%;
+    width: 100%;
+}
+
+.links-nav{
+    margin-left: 1vw;
+    color: #000;
+    border-bottom: 2px solid #00CED1;
+    font-size: 2.8vh;
+}
+
+h1{
+    font-size: 4vh;
+}
+
+.links-nav:hover{
+    color: #0000008c;
+}
+
+.secoes-especialidades{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    gap: 2vh;
+    margin-top: 4%;
+}
+
+.texto-especialidade{
+    width: 50vw;
+    margin-bottom: 1%;
+}
+
+.table-img{
+    display:flex;
+    flex-direction:row;
+    width: 100vw;
+    justify-content: center;
+
+}
+
+.table-img img{
+    width: 30vw;
+}
+
+table{
+    width: 50vw;
+    border-collapse: collapse;
+}
+
+tr:nth-last-child(odd){
+    background-color: #C0C0C0;
+}
+
+tr:nth-last-child(even){
+    background-color: #DCDCDC;
+   
+}
+
+th{
+    background-color:#00CED1;
+    color:#fff;
+    text-align: center;
+    
+}
+
+@media (max-width:425px){
+
+    .nav-titulo{
+        margin-top: 2%;
+    }
+
+    .nav-titulo nav{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 2vw;
+        width: 80%;
+    }
+
+    .img-none{
+        display: none;
+    }
+
+    table{
+        width: 100%;
+        height: 30vh;
+    }
+
+    .texto-especialidade{
+        width: 90%;
+    }
+
+    .secoes-especialidades h3{
+        margin-top: 6%
+    }
+
+}
+
+@media (min-width:426px) and (max-width:768px){
+
+    .nav-titulo{
+        margin-top: 2%;
+    }
+
+    h1:first-of-type{
+        font-size: 4vh;
+    }
+
+    .nav-titulo nav{
+        display:flex;
+        justify-content: space-evenly;
+        width: 60%;
+    }
+
+    .img-none{
+        display: none;
+    }
+
+    table{
+        width: 95%;
+        height: 25vh;
+    }
+
+    .texto-especialidade{
+        width: 70%;
+        font-size: 3vh;
+    }
+
+    .links-topo{
+        font-size: 2.5vh;
+    }
+
+
+}
